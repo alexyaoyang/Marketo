@@ -22,9 +22,13 @@
 {
 'use strict'
 
+  const inputFile = "leads.json";
+  const outputFile = "leadsdedup.json";
+  const logFile = "deduplogs.txt";
+
   fs = require('fs');
 
-  fs.readFile('./leads.json', 'utf8', (err, data) => {
+  fs.readFile(inputFile, 'utf8', (err, data) => {
     if(err) return console.error(err);
 
     // Add epoch date and initial index
@@ -59,11 +63,11 @@
       }
     }
 
-    fs.writeFile('./deduplogs.txt', log, (err) => {
+    fs.writeFile(logFile, log, (err) => {
       if(err) return console.error(err);
       console.log("Logs saved!");
     });
-    fs.writeFile('./leadsdedup.json', JSON.stringify(result), (err) => {
+    fs.writeFile(outputFile, JSON.stringify(result), (err) => {
       if(err) return console.error(err);
       console.log("File saved!");
     });
