@@ -14,6 +14,7 @@
 ## Notes
 * Could be done much easier with Lodash, but this is a programming challenge for a reason.
 * Could be made more user friendly with a web UI.
+* Right now checks for duplicates with JS dictionary for simplicity. Could also be done with other ways, such as MongoDB unique key.
 
 ## License
 
