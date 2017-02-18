@@ -1,9 +1,12 @@
 # Marketo Programming Challenge
 
-## Installation
+## Setup
 
-1. Install NodeJS
-2. Run `node deduplicate.js`
+1. Install [NodeJS](https://nodejs.org/)
+2. Run `node app.js [leads] [result] [logs]`. Parameters are optional.
+  * `leads` is the name of input lead file.
+  * `result` is the name of output processed lead file.
+  * `logs` is the name of log file.
 
 ## Acknowledgements
 * File read and write by NodeJS
