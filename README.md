@@ -11,6 +11,10 @@
 ## Acknowledgements
 * File read and write by NodeJS
 
+## Notes
+* Could be done much easier with Lodash, but this is a programming challenge for a reason.
+* Could be made more user friendly with a web UI.
+
 ## License
 
 Copyright 2017, Alex Yao
